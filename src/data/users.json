@@ -1,0 +1,47 @@
+[
+    {
+      "id": 1,
+      "nome": "Adminis",
+      "sobrenome": "Trador",
+      "apelido": "Admin",
+      "senha": "aaa",
+      "email": "administrador@email.com",
+      "admin": true,
+      "criadoEm": "2021-09-13T00:55:49.130Z",
+      "modificadoEm": "2021-09-30T00:40:53.344Z"
+    },
+    {
+      "id": 2,
+      "nome": "User",
+      "sobrenome": "Um",
+      "apelido": "U1",
+      "senha": "uuu",
+      "email": "user1@email.com",
+      "admin": false,
+      "criadoEm": "2021-09-13T00:55:49.130Z",
+      "modificadoEm": "2021-09-30T00:40:53.344Z"
+    },
+    {
+      "id": 3,
+      "nome": "User",
+      "sobrenome": "Dois",
+      "apelido": "U2",
+      "senha": "uuu",
+      "email": "user2@email.com",
+      "admin": false,
+      "criadoEm": "2021-09-13T00:55:49.130Z",
+      "modificadoEm": "2021-09-30T00:40:53.344Z"
+    },
+    {
+      "id": 4,
+      "nome": "User",
+      "sobrenome": "Tres",
+      "apelido": "U3",
+      "senha": "uuu",
+      "email": "user3@email.com",
+      "admin": false,
+      "criadoEm": "2021-09-13T00:55:49.130Z",
+      "modificadoEm": "2021-09-30T00:40:53.344Z"
+    }
+    
+  ]

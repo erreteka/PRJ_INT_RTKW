@@ -1,0 +1,29 @@
+<%- include("./partials/head") %>
+<main>
+  <a href="/">Home</a> 
+  <h1>Adicionar Filme</h1>
+  <form action="/film/create" method="post" enctype = "multipart/form-data">
+    <input type="text" name="nome" placeholder="Nome do filme" />
+    <br />
+    <br />
+    <input type="text" name="descricao" placeholder="Descrição" />
+    <br />
+    <br />
+    <input type="number" name="ratings" placeholder="Ratings" />
+    <br />
+    <br />
+    <input type="text" name="categoria" placeholder="Categoria" />
+    <br />
+    <% if(locals.error){ %>
+     <h2><%= error.message %></h2>
+    <% } %>
+    <br />
+    <button type="reset">Limpar</button>
+    <button type="submit">Adicionar filme</button>
+  </form>
+  <% if(locals.success){ %>
+    <a href="/">Página inicial</a>
+    <h2><%= success.message %></h2>
+  <% } %>
+</main>
+<%- include("./partials/footer") %>

@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 16px;
+    color: #ced4df;
+  }
+
+  h1 {
+    width: 450px;
+    height: 200px;
+    color: #ced4df;
+    margin: 0px 0;
+    margin-left: 400px;
+    
+    
+
+  }
+  
+
+  header form {
+    display: inline;
+  }
+
+  header {
+    background-color: #3d3c3c;
+    width: 100%;
+    padding: 25px;
+    position: fixed;
+    height: 70px;
+    top: 0;
+    font-size: large;
+  }
+  
+ 
+  
+
+  
+
+  .header .container {
+    font-style: italic;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    float: left;
+    font-size: 1rem;
+    letter-spacing: .07692308em;
+    line-height: 17px;
+    margin-left: 50px;
+    text-transform: uppercase;
+  }
+ 
+  header .container a {
+    color: #f0e8e8;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 300px;
+    
+  }
+
+  header figure {
+    display: flex;
+    width: 180px;
+    height: 15px;
+    align-items: center;
+    background-image: url("logo.jpg");
+  }
+ 
+  header figure figcaption {
+    width: 40px;
+    height: 20px;
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  body {
+    font-family: "Open Sans", sans-serif;
+    padding-top: 550px;
+    height: 700px;
+    width: 100%;
+    background: #3d3c3c;
+    background-image: url("/images/Nope1.jpg");
+    background-size: cover;
+    align-content: center;
+       
+  }
+  main {
+    padding: 0 30px;
+    
+    background: #3d3c3c;
+    
+  }
+  
+  main a{
+    
+    color: #ced4df; 
+  }
+  
+  figure {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+
+  a:hover {
+    color: rgb(92, 86, 179);
+  }
+  
+  
+  input {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    margin: 10px 0;
+  }
+  
+  button {
+    width: 50%;
+    height: 40px;
+    padding: 0 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    background-color: #03293bee;
+    color: #fff;
+    border-radius: 10px;
+  }
+  .btn-logout{
+    border: none;
+    width: auto;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    background-color: transparent;
+    color: #3875e6;
+    text-decoration: none;
+    border-radius: 0;
+  }
+  .btn-logout:hover {
+    color: rgb(85, 72, 202);
+    background-color: transparent;
+  }
+  button:hover {
+    background-color: #03293baa;
+  }
+  button {
+    width: 100px;
+  }
+  a button {
+    background-color: #0d9ee0ee;
+  }
+  .form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-container  form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .error-alert {
+    font-size: 1.5rem;
+    color: red;
+  }
+  .success-alert {
+    font-size: 1.5rem;
+    color: green;
+  }
+  .validation-alert {
+    font-size: 1.5rem;
+    color: #c4a621;
+  }
+  .form-container form  {
+    width: 100%;
+  }
+
+  @media only screen and (min-width: 600px) {
+    .form-container form  {
+      width: 80%;
+    }
+  }
+  @media only screen and (min-width: 992px) {
+    .form-container form {
+      width: 30%;
+    }
+  }

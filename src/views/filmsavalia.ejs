@@ -1,0 +1,36 @@
+<%- include("./partials/head") %>
+<main>
+  <a href="/">Home</a>
+  <h1>Lista de filmes</h1>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>Filme</th>
+        <th>Descrição</th>
+        <th>Ratings</th>
+        <th>Categoria</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% for(let filmsavalia of listfilms2){ %>
+        <tr>
+          <td><%= filmsavalia.id %></td>
+          <td><%= filmsavalia.nome %></td>
+          <td><%= filmsavalia.descricao %></td>
+          <td><%= filmsavalia.ratings %></td>
+          <td><%= filmsavalia.categoria %></td>
+          <td>
+		      
+            
+            <a href="/film/edit/<%= filmsavalia.id %>"><button type="button">Avaliar</button></a>
+          
+          </td>
+        </tr>
+      <% } %>
+    </tbody>
+  </table>
+</main>
+<%- include("./partials/footer") %>

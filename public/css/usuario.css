@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /*@media (min-width:460px) {
+  */
+
+  .principal {
+      width: 1500px;
+      height: 450px;
+      background-color: black;
+      margin: 5px;
+      display: block;
+  }
+
+  main {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+  }
+
+  .watch {
+      width: 250px;
+      height: 450px;
+      background-color: black;
+      margin: 5px;
+      display: block;
+     
+  }
+
+  .details {
+      width: 400px;
+      height: 450px;
+      background-color: black;
+      margin: 5px;
+      display: block;
+
+  }
+  
+  .h1 {
+      font: white;
+      font-size: large;
+
+  }
+
+  .ratings {
+      width: 250px;
+      height: 450px;
+      background-color: black;
+      margin: 5px;
+      display: block;
+
+  }
+    

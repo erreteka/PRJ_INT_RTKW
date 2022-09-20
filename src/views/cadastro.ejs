@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JOIN</title>
+    <link rel="stylesheet" href="./css/cadastro.css" />
+    
+    
+  </head>
+  <body>
+    <main>
+      <section id="container-login">
+        <h2>JOIN LETTERBOXD</h2>
+        <form action="/login" method="GET">
+          <div class="container-input">
+            <label for="email">E-mail Address</label>
+           <input
+              id="email"
+              type="email"
+              name="email"
+              required
+            />
+          </div>
+
+          <div class="container-input">
+            <label for="username">Username</label>
+            <input
+              id="username"
+              type="username"
+              name="username"
+              required
+            />
+          </div>
+
+          <div class="container-input">
+            <label for="password">Password</label>
+            <input
+              id="password"
+              type="password"
+              name="password"
+              required
+            />
+          </div>
+          
+          <div>
+            <input type="checkbox" id="year" style="height:20px; width: 20px; border-radius: 10px;"> 
+            <label for="year" style="color:rgb(175, 173, 173) ;">I'm at least 16 years old and accept the Terms of Use.</label>
+          </div>
+          
+          <div>
+            <input type="checkbox" style="height:20px; width: 20px; border-radius: 10px;" > 
+            <label for="privacy" style="color:rgb(175, 173, 173) ;">I accept the Privacy Policy and consent to the processing of my personal information in accordance with it.</label>
+          </div>
+
+          <input type="submit" value="SIGN UP" style="background-color:green; color: white; border: none; width: 90; height: 10" />
+          
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

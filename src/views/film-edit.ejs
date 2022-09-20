@@ -1,0 +1,29 @@
+<%- include("./partials/head") %>
+<main>
+  <a href="/">Home</a>
+  <h1>Atualizar produto</h1>
+  <form action="/film/edit/<%= film.id %>?_method=put" method="post">
+    <input value="<%= film.nome %>" type="text" name="nome" placeholder="Nome do filme" />
+    <br />
+    <br />
+    <input value="<%= film.descricao %>" type="text" name="descricao" placeholder="Descrição" />
+    <br />
+    <br />
+    <input value="<%= film.ratings %>" type="number" name="ratings" placeholder="Ratings" />
+    <br />
+    <br />
+    <input value="<%= film.categoria %>" type="text" name="categoria" placeholder="Categoria" />
+    <br />
+    <% if(locals.error){ %>
+      <a href="/">Home</a>
+     <h2><%= error.message %></h2>
+    <% } %>
+    <br />
+    <button type="submit">Atualizar</button>
+  </form>
+  <% if(locals.success){ %>
+    <a href="/">Home</a>
+    <h2><%= success.message %></h2>
+  <% } %>
+</main>
+<%- include("./partials/footer") %>
