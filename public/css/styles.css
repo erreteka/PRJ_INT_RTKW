@@ -26,13 +26,14 @@
   }
 
   header {
-    background-color: #3d3c3c;
+    background-color: #0a0a0a;
     width: 100%;
     padding: 25px;
     position: fixed;
-    height: 70px;
+    height:100px;
     top: 0;
     font-size: large;
+     
   }
   
  
@@ -52,6 +53,7 @@
     line-height: 17px;
     margin-left: 50px;
     text-transform: uppercase;
+     
   }
  
   header .container a {
@@ -59,23 +61,36 @@
     font-size: 12px;
     font-weight: 600;
     margin-left: 300px;
-    
+     
+     
+     
+     
+     
+     
   }
 
-  header figure {
-    display: flex;
-    width: 180px;
-    height: 15px;
-    align-items: center;
-    background-image: url("logo.jpg");
-  }
- 
-  header figure figcaption {
-    width: 40px;
-    height: 20px;
-    font-weight: bold;
+   
+
+  header .container form {
+    color: #f0e8e8;
     font-size: 12px;
+    font-weight: 600;
+    margin-left: 300px;
+     
+     
+     
   }
+
+
+  
+  .logo {
+    display: flex;
+    flex-direction: 5x 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+   
 
   body {
     font-family: "Open Sans", sans-serif;
@@ -83,7 +98,7 @@
     height: 700px;
     width: 100%;
     background: #3d3c3c;
-    background-image: url("/images/Nope1.jpg");
+    background-image: url("/images/nope.jpg");
     background-size: cover;
     align-content: center;
        
@@ -96,7 +111,7 @@
   }
   
   main a{
-    
+     
     color: #ced4df; 
   }
   
@@ -181,6 +196,23 @@
   }
   .form-container form  {
     width: 100%;
+  }
+
+  .container-filmcard {
+     
+    
+
+  } 
+
+  .filminfo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+  }
+
+  .filminfo img{
+    width: 100%;
+    margin-left: 10px;
   }
 
   @media only screen and (min-width: 600px) {

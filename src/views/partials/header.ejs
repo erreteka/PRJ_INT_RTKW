@@ -1,43 +1,56 @@
 <header>
   <link rel="stylesheet" href="/css/styles.css">
   <div class = "container">
-    <figure>
-      <img src="logo.jpg" alt=""/>
-      
-    </figure>
+    <article class="logo">
+      <div>
+        <img src="./images/logo.jpg" alt="logo"/>
+
+      </div>
+
+    </article>
     
+     
+      
+     
     
   
-      <a href="/">Home</a>
+       
     
       <% if(locals.user && user.admin) {%>
         
         
-        <a href="/film">ADMINISTRADOR</a>
+        <a href="/film">PAINEL ADMINISTRADOR</a>
         
        
       <% }%>
       <% if(locals.user){%>
         
+         
         
         <a href="/filmsavalia">AVALIA FILMES</a>
 
         
         <form action="/logout" method="post">
+            
           <button type="submit" class="btn-logout">
-            |
+             
             LOGOUT
             
           </button>
         </form>
       <% }else {%>
-        
+         
+         
+         
         
         <a href="/login">LOGIN</a>
+
+
         
         
         
-        <a href="/filmslist">LISTA FILMES</a>
+        
+        
         
       <% }%>
   

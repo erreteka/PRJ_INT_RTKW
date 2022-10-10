@@ -1,0 +1,53 @@
+<%- include("./partials/head") %>
+<%- include("./partials/header") %>
+
+    <main>
+        
+         
+        
+            <h1>Track films you’ve watched.
+                Save those you want to see.
+                Tell your friends what’s good.</h1>
+
+            
+            <ul>
+                <div class ="container-filmcard"> 
+                
+                <% films.forEach(film => { %>
+                    <li>
+                        <br>
+                        
+                        
+                        <img src="./public/images/ghost.jpg"/>
+
+                        <article class="filminfo">
+                         
+                            <h2>Filme: <%= film.nome %></h2>
+                            <p>Descrição: <%= film.descricao %></p>
+                            <p>Genero: <%= film.genero %></p>
+                            <p>Classificação: <%= film.classificacao %></p>
+                            <p>Produtora: <%= film.produtora %></p>
+                            <p>Ano: <%= film.ano %></p>
+                            <p>Diretor: <%= film.diretor %></p>
+                            <p>Rating: <%= film.rating %></p>
+                            <br>
+                            
+                        </article>
+                    </li>
+                </div>
+                <hr>
+
+                <% }) %>
+            </ul>    
+
+            
+
+            
+    
+
+    </main>
+
+    
+                
+</body>
+<%- include("./partials/footer") %>

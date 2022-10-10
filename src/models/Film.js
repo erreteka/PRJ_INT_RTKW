@@ -7,11 +7,13 @@ const RatingFilm = require("./RatingFilm");
 const Film = db.define(
     "Film",
     {
+      
       id: {
         type: Sequelize.DataTypes.INTEGER.UNSIGNED,
         autoIncrement: true,
         primaryKey: true,
       },
+       
       nome: {
         type: Sequelize.DataTypes.STRING(100),
         
@@ -27,6 +29,9 @@ const Film = db.define(
         
         allowNull: false,
       },
+      classificacao: {
+        type: Sequelize.DataTypes.INTEGER,
+      },
       produtora: {
         type: Sequelize.DataTypes.STRING(100),
         
@@ -40,13 +45,18 @@ const Film = db.define(
         
         allowNull: false,
       },
+      
+      rating: {
+        type: Sequelize.DataTypes.INTEGER,
+      },
+    
       user_id: {
-        type: DataTypes.INTEGER.UNSIGNED,
+        type: Sequelize.DataTypes.INTEGER.UNSIGNED,
       },
     },
     {
       
-      timestamps: true,
+      timestamps: false,
     }
   );
   

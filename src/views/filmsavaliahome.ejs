@@ -1,0 +1,40 @@
+<%- include("./partials/head") %>
+<main>
+  <a href="/">Voltar</a>
+  <h1>Lista de filmes</h1>
+   
+      
+    
+    <tbody>
+      <div class ="container-filmcard"> 
+      <% for(let film of films){ %>
+        <img src="./public/images/ghost.jpg"/>
+
+        <article class="filminfo">
+          <br>
+          <p>
+            <p>id: <%= film.id %></p>
+            <h2>Filme: <%= film.nome %></h2>
+            <p>Descrição: <%= film.descricao %></p>
+            <p>Genero: <%= film.genero %></p>
+            <p>Classificação: <%= film.classificacao %></p>
+            <p>Produtora: <%= film.produtora %></p>
+            <p>Ano: <%= film.ano %></p>
+            <p>Diretor: <%= film.diretor %></p>
+            <p>Rating: <%= film.rating %></p>
+            <p>
+            
+		      
+              <a href="/filmsavalia/<%= film.id %>"><button type="button">Avaliar</button></a>
+            
+            </p>
+        </article>
+        <br>
+        <hr>
+        </p>
+      </div>
+      <% } %>
+    </tbody>
+   
+</main>
+<%- include("./partials/footer") %>

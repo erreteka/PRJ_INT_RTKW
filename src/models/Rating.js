@@ -12,17 +12,17 @@ const Rating = db.define(
         primaryKey: true,
       },
       create_at: {
-        type: DataTypes.DATE,
+        type: Sequelize.DataTypes.DATE,
         allowNull: false,
       },
       status: {
-        type: DataTypes.ENUM("avaliar", "avaliado"),
+        type: Sequelize.DataTypes.ENUM("avaliar", "avaliado"),
         defaultValue: "avaliar",
         allowNull: false,
       },
       
       user_id: {
-        type: DataTypes.INTEGER.UNSIGNED,
+        type: Sequelize.DataTypes.INTEGER.UNSIGNED,
       },
     },
     {

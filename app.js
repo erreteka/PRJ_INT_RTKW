@@ -17,6 +17,7 @@ const methodOverride = require("method-override");
  const cookieParser = require("cookie-parser");
  const indexRoute = require("./src/routes/indexRoute");
  const authRoute = require("./src/routes/authRoute");
+ const imageRoute = require("./src/routes/imageRoute");
 
 
 
@@ -36,7 +37,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(session({ secret: "senha"}));
 
-
+app.use("/home", filmslistRoute);
 app.use("/film", filmRoute);
 app.use("/filmslist", filmslistRoute);
 app.use("/filmsavalia", filmsavaliaRoute);
@@ -45,13 +46,15 @@ app.use("/filmsavalia", filmsavaliaRoute);
 app.use("/", indexRoute);
 app.use("/", authRoute);
 
+app.use("/images", imageRoute);
+
 
 
 
 
 
 app.listen(port, () => {
-  console.log("Estamos rodando em: http://localhost:" + port);
+  console.log("Estamos rodando em: http://localhost:" + port + "/home");
 });
 
 

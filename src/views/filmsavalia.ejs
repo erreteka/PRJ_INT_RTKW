@@ -1,36 +1,32 @@
 <%- include("./partials/head") %>
 <main>
-  <a href="/">Home</a>
-  <h1>Lista de filmes</h1>
+  <a href="/filmsavalia">Voltar</a>
+  <h1>Avaliar filme</h1>
   
-  <table>
-    <thead>
-      <tr>
-        <th>id</th>
-        <th>Filme</th>
-        <th>Descrição</th>
-        <th>Ratings</th>
-        <th>Categoria</th>
-        <th>Ações</th>
-      </tr>
-    </thead>
-    <tbody>
-      <% for(let filmsavalia of listfilms2){ %>
-        <tr>
-          <td><%= filmsavalia.id %></td>
-          <td><%= filmsavalia.nome %></td>
-          <td><%= filmsavalia.descricao %></td>
-          <td><%= filmsavalia.ratings %></td>
-          <td><%= filmsavalia.categoria %></td>
-          <td>
-		      
-            
-            <a href="/film/edit/<%= filmsavalia.id %>"><button type="button">Avaliar</button></a>
-          
-          </td>
-        </tr>
-      <% } %>
-    </tbody>
-  </table>
-</main>
+
+  <div class ="container-filmcard"> 
+    <br>
+                        
+                        
+    <img src="./public/images/ghost.jpg"/>
+
+    <article class="filminfo">
+      <p>id: <%= film.id %></p>
+      <p>Filme: <%= film.nome %></p>
+      <p>Descrição: <%= film.descricao %></p>
+      <p>Genero: <%= film.genero %></p>
+      <p>Classificação: <%= film.classificacao %></p>
+      <p>Produtora: <%= film.produtora %></p>
+      <p>Ano: <%= film.ano %></p>
+      <p>Diretor: <%= film.diretor %></p>
+      <form class="cardp3" action="/filmsavalia/<%= film.id %>?_method=PUT" method="post">
+        <div class="form-group">
+          <label for="rating">Rating:</label>
+          <input type="text" class="form-control" id="rating" name="rating" value="<%= film.rating %>">
+        </div>
+        <button class="btn btn-success" type="submit">Avaliar</button>
+      </form>
+    </article>
+
+  </div>
 <%- include("./partials/footer") %>

@@ -6,10 +6,10 @@ const filmslistController = require("../controllers/filmslistController");
 
 
 // GET http://localhost:3000/filmslist
-router.get("/filmslist", filmslistController.index1);
+//router.get("/filmslist", filmslistController.index1);
 
 // GET http://localhost:3000/filmslist
-router.get("/", filmslistController.index1);
+router.get("/", filmslistController.index);
 
 
 const authController = require("../controllers/AuthController");

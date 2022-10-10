@@ -1,13 +1,23 @@
 <%- include("./partials/head") %>
 <main>
-  <a href="/">Home</a>
+  <a href="/film">Voltar</a>
   <h1>Visualizar filme</h1>
-  
-  <div>
-    <h2><%= film.nome %></h2>
-    <p><%= film.descricao %></p>
-    <p><%= film.ratings %></p>
-    <p><%= film.categoria %></p>
-  </div>
+
+ 
+ <main class="container-view">
+  <p>
+    <p>id: <%= film.id %></p>
+    <h2>Filme: <%= film.nome %></h2>
+    <p>Descrição: <%= film.descricao %></p>
+    <p>Genero: <%= film.genero %></p>
+    <p>Classificação: <%= film.classificacao %></p>
+    <p>Produtora: <%= film.produtora %></p>
+    <p>Ano: <%= film.ano %></p>
+    <p>Diretor: <%= film.diretor %></p>
+    <p>Rating: <%= film.rating %></p>
+  </p>
+      
 </main>
+
+
 <%- include("./partials/footer") %>

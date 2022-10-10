@@ -5,24 +5,18 @@ const multer = require ("multer");
 const filmsavaliaController = require("../controllers/filmsavaliaController");
 
 
-// GET http://localhost:3000/filmslist
-router.get("/filmsavalia", filmsavaliaController.index2);
-
-// GET http://localhost:3000/filmslist
-router.get("/", filmsavaliaController.index2);
+// GET http://localhost:3000/filmsavalia/
+router.get("/", filmsavaliaController.index);
 
 
-const authController = require("../controllers/AuthController");
+// router.get("/edit/:id", filmsavaliaController.edit);
+router.get("/:id", filmsavaliaController.edit);
 
-const isAuth = require("../middlewares/auth")
-const isGuest = require("../middlewares/guest")
+ 
 
-router.get("/login",isGuest, authController.login);
-router.post("/login", isGuest, authController.auth);
+// // PUT http://localhost:3000/filmsavalia/1
+// router.put("/edit/:id", filmsavaliaController.update);
+router.put("/:id", filmsavaliaController.update);
 
-router.get("/register",isGuest, authController.register);
-router.post("/register", isGuest, authController.create);
-
-router.post("/logout", isAuth, authController.logout);
-
+ 
 module.exports = router;

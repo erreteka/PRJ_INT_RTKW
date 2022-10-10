@@ -1,40 +1,53 @@
 <%- include("./partials/head") %>
 <main>
-  <a href="/">Home</a>
+  <a href="/">Voltar</a>
   <h1>Lista de filmes</h1>
   <a href="/film/create"><button type="button">Adicionar Filme</button></a>
-  <table>
-    <thead>
-      <tr>
-        <th>id</th>
-        <th>Filme</th>
-        <th>Descrição</th>
-        <th>Ratings</th>
-        <th>Categoria</th>
-        <th>Ações</th>
-      </tr>
-    </thead>
+  <br>
+  <br>
+  <br>
+  <hr>
+    
+      
+    
     <tbody>
-      <% for(let film of listfilms){ %>
-        <tr>
-          <td><%= film.id %></td>
-          <td><%= film.nome %></td>
-          <td><%= film.descricao %></td>
-          <td><%= film.ratings %></td>
-          <td><%= film.categoria %></td>
-          <td>
+    <div class ="container-filmcard"> 
+      <% for(let film of films){ %>
+        <br>
+        <p>
+          <img src="./public/images/ghost.jpg"/>
+
+          <article class="filminfo">
+                     
+            <p>id: <%= film.id %></p>
+            <h2>Filme: <%= film.nome %></h2>
+            <p>Descrição: <%= film.descricao %></p>
+            <p>Genero: <%= film.genero %></p>
+            <p>Classificação: <%= film.classificacao %></p>
+            <p>Produtora: <%= film.produtora %></p>
+            <p>Ano: <%= film.ano %></p>
+            <p>Diretor: <%= film.diretor %></p>
+            <p>Rating: <%= film.rating %></p>
+            <p>
+              <br>
 		      
-            <a href="/film/edit/<%= film.id %>"><button type="button">Editar</button></a>
-            <a href="/film/delete/<%= film.id %>"><button type="button">Deletar</button></a>
+              <a href="/film/edit/<%= film.id %>"><button type="button">Editar</button></a>
+              <a href="/film/delete/<%= film.id %>"><button type="button">Deletar</button></a>
            
 		      
-			      <a href="/film/<%= film.id %>"><button type="button">Visualizar</button></a>
-            <a href="/film/edit/<%= film.id %>"><button type="button">Avaliar</button></a>
+			        <a href="/film/<%= film.id %>"><button type="button">Visualizar</button></a>
+              <!-- <a href="/film/edit/<%= film.id %>"><button type="button">Avaliar</button></a>
+           -->
+            </p>
+             
+          </article>
           
-          </td>
-        </tr>
+        </p>
+      </div>
+      <br>
+      <hr>
       <% } %>
     </tbody>
-  </table>
+   
 </main>
 <%- include("./partials/footer") %>
