@@ -2,23 +2,26 @@
 <main>
   <a href="/">Voltar</a>
   <h1>Lista de filmes</h1>
-  <a href="/film/create"><button type="button">Adicionar Filme</button></a>
-  <br>
-  <br>
-  <br>
-  <hr>
+    <a href="/film/create"><button type="button">Adicionar Filme</button></a>
+    <br>
+    <br>
+    <br>
+    <hr>
     
       
-    
-    <tbody>
-    <div class ="container-filmcard"> 
+  <tbody> 
+     
+      <div class ="container-filmcard"> 
       <% for(let film of films){ %>
         <br>
-        <p>
-          <img src="./public/images/ghost.jpg"/>
+        
+          
 
-          <article class="filminfo">
-                     
+           
+        <img src="/images/Img.png"/>
+           
+        <article class="filminfo">    
+          <p>      
             <p>id: <%= film.id %></p>
             <h2>Filme: <%= film.nome %></h2>
             <p>Descrição: <%= film.descricao %></p>
@@ -39,15 +42,18 @@
               <!-- <a href="/film/edit/<%= film.id %>"><button type="button">Avaliar</button></a>
            -->
             </p>
+        </article> 
              
-          </article>
+           
           
         </p>
-      </div>
+       
       <br>
       <hr>
+      </div>
       <% } %>
-    </tbody>
+  </tbody>    
+     
    
 </main>
 <%- include("./partials/footer") %>

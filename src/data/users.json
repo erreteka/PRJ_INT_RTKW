@@ -42,6 +42,28 @@
       "admin": false,
       "criadoEm": "2021-09-13T00:55:49.130Z",
       "modificadoEm": "2021-09-30T00:40:53.344Z"
+    },
+    {
+      "id": 5,
+      "nome": "User",
+      "sobrenome": "Quatro",
+      "apelido": "U4",
+      "senha": "uuu",
+      "email": "user4@email.com",
+      "admin": false,
+      "criadoEm": "2021-09-13T00:55:49.130Z",
+      "modificadoEm": "2021-09-30T00:40:53.344Z"
+    },
+    {
+      "id": 6,
+      "nome": "Adminis",
+      "sobrenome": "Trador 2",
+      "apelido": "Admin2",
+      "senha": "aaa",
+      "email": "administrador2@email.com",
+      "admin": true,
+      "criadoEm": "2021-09-13T00:55:49.130Z",
+      "modificadoEm": "2021-09-30T00:40:53.344Z"
     }
     
   ]

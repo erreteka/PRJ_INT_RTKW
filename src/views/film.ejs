@@ -2,19 +2,32 @@
 <main>
   <a href="/film">Voltar</a>
   <h1>Visualizar filme</h1>
-
- 
- <main class="container-view">
   <p>
-    <p>id: <%= film.id %></p>
-    <h2>Filme: <%= film.nome %></h2>
-    <p>Descrição: <%= film.descricao %></p>
-    <p>Genero: <%= film.genero %></p>
-    <p>Classificação: <%= film.classificacao %></p>
-    <p>Produtora: <%= film.produtora %></p>
-    <p>Ano: <%= film.ano %></p>
-    <p>Diretor: <%= film.diretor %></p>
-    <p>Rating: <%= film.rating %></p>
+    <div class ="container-filmcard"> 
+       
+      <img src="/images/Img.png"/>
+     
+      
+     
+
+      <article class="filminfo">
+               
+ 
+        <br>
+        <br>
+        <p>id: <%= film.id %></p>
+        <h2>Filme: <%= film.nome %></h2>
+        <p>Descrição: <%= film.descricao %></p>
+        <p>Genero: <%= film.genero %></p>
+        <p>Classificação: <%= film.classificacao %></p>
+        <p>Produtora: <%= film.produtora %></p>
+        <p>Ano: <%= film.ano %></p>
+        <p>Diretor: <%= film.diretor %></p>
+        <p>Rating: <%= film.rating %></p>
+        <br>
+      
+      </article>
+    </div>
   </p>
       
 </main>

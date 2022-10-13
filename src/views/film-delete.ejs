@@ -2,23 +2,36 @@
 <main>
   <a href="/film">Voltar</a>
   <h1>Deletar filme</h1>
-  <div>
-    <h2>Filme: <%= film.nome %></h2>
-    <p>Descrição: <%= film.descricao %></p>
-    <p>Genero: <%= film.genero %></p>
-    <p>Classificação: <%= film.classificacao %></p>
-    <p>Produtora: <%= film.produtora %></p>
-    <p>Ano: <%= film.ano %></p>
-    <p>Diretor: <%= film.diretor %></p>
+  <p>
+  
+    <div class ="container-filmcard"> 
     
-  </div>
-  <div>
-    <form action="/film/delete/<%= film.id %>?_method=DELETE" method="post">
-      <h2 class="error-alert">Deseja deletar este filme?</h2>
-      <a href="/film"><button type ="button">Não</button></a>
+      <img src="/images/Img.png"/>
+
+      <article class="filminfo"> 
+                <br>
+                <p>id: <%= film.id %></p>
+                <h2>Filme: <%= film.nome %></h2>
+                <p>Descrição: <%= film.descricao %></p>
+                <p>Genero: <%= film.genero %></p>
+                <p>Classificação: <%= film.classificacao %></p>
+                <p>Produtora: <%= film.produtora %></p>
+                <p>Ano: <%= film.ano %></p>
+                <p>Diretor: <%= film.diretor %></p>
+                <br>
+            
+    
+            
+                <form action="/film/delete/<%= film.id %>?_method=DELETE" method="post">
+                  <h2 class="error-alert">Deseja deletar este filme?</h2>
+                  <a href="/film"><button type ="button">Não</button></a>
       
-      <button type="submit" class="btn btn-danger">Sim</button>
-    </form>
-  </div>
+                  <button type="submit" class="btn btn-danger">Sim</button>
+                </form>
+            
+      </article>
+          
+    </div>
+  </p>    
 </main>
 <%- include("./partials/footer") %>

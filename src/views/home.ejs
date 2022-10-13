@@ -1,27 +1,33 @@
 <%- include("./partials/head") %>
 <%- include("./partials/header") %>
 
-    <main>
-        
-         
-        
-            <h1>Track films you’ve watched.
+    <main class="form-container">
+            <br>
+            <br>
+            <br>
+            <br>
+            <h3>
+                Track films you’ve watched.
                 Save those you want to see.
-                Tell your friends what’s good.</h1>
+                Tell your friends what’s good.</h3>
 
             
             <ul>
                 <div class ="container-filmcard"> 
+                <hr>
                 
                 <% films.forEach(film => { %>
                     <li>
                         <br>
+                         
                         
                         
-                        <img src="./public/images/ghost.jpg"/>
+                        <img src="/images/Img.png"/>
+                         
 
                         <article class="filminfo">
-                         
+                            <br>
+                            <br>
                             <h2>Filme: <%= film.nome %></h2>
                             <p>Descrição: <%= film.descricao %></p>
                             <p>Genero: <%= film.genero %></p>
@@ -34,6 +40,7 @@
                             
                         </article>
                     </li>
+                    <br>
                 </div>
                 <hr>
 
